@@ -1,0 +1,5 @@
+RAPORT GENERARE DATE - 2025-12-04 11:43:20.348678
+========================================
+Total Imagini Originale: 102
+Total Imagini Sintetice: 102
+Procent Contributie Originala: 50.00%

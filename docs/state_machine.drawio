@@ -1,0 +1,116 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="27.0.6">
+  <diagram name="Page-1" id="S07RgDTMeBTrHuYCxNkR">
+    <mxGraphModel dx="1501" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3134SyGiZW_LSLvwtLpF-1" value="" style="ellipse;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="20" y="99" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-2" value="IDLE (Așteptare)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="84" y="86" width="133" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-3" value="CAPTURE_IMAGE&#xa;(Camera)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="439" y="184" width="215" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-4" value="VALIDATE_IMAGE&#xa;(Verificare Calitate)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="882" y="184" width="216" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-5" value="ERROR&#xa;(Log Eroare)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1361" y="20" width="166" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-6" value="PREPROCESS&#xa;(Resize 128x128)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1336" y="184" width="216" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-7" value="RN_INFERENCE&#xa;(Model CNN)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1602" y="184" width="216" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-8" value="DECISION_LOGIC&#xa;(Verificare Prag)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="2012" y="184" width="216" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-9" value="LOG_OK&#xa;(Salvare Log)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="2489" y="106" width="182" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-10" value="TRIGGER_STOP&#xa;(Alertă Operator)" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="2472" y="209" width="216" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-11" value="" style="ellipse;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="2886" y="222" width="14" height="14" as="geometry" />
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-12" value="" style="curved=1;startArrow=none;;exitX=1;exitY=0.49;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-1" target="3134SyGiZW_LSLvwtLpF-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-13" value="Trigger (Strat Finalizat)" style="curved=1;startArrow=none;;exitX=0.77;exitY=1;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-2" target="3134SyGiZW_LSLvwtLpF-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="328" y="204" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-14" value="Imagine Preluată" style="curved=1;startArrow=none;;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-3" target="3134SyGiZW_LSLvwtLpF-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-15" value="Imagine Neclară / Neagră" style="curved=1;startArrow=none;;exitX=0.64;exitY=0;entryX=0;entryY=0.65;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-4" target="3134SyGiZW_LSLvwtLpF-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1217" y="57" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-16" value="Imagine Validă" style="curved=1;startArrow=none;;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-4" target="3134SyGiZW_LSLvwtLpF-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-17" value="" style="curved=1;startArrow=none;;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-6" target="3134SyGiZW_LSLvwtLpF-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-18" value="Predicție (Clasă + % Confidență)" style="curved=1;startArrow=none;;exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-7" target="3134SyGiZW_LSLvwtLpF-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-19" value="Probabilitate Defect &amp;lt; 95%" style="curved=1;startArrow=none;;exitX=0.97;exitY=0;entryX=0;entryY=0.82;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-8" target="3134SyGiZW_LSLvwtLpF-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2350" y="159" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-20" value="Continuă Printarea" style="curved=1;startArrow=none;;exitX=0;exitY=0.3;entryX=1;entryY=0.5;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-9" target="3134SyGiZW_LSLvwtLpF-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2350" y="106" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-21" value="Probabilitate Defect &gt; 95%" style="curved=1;startArrow=none;;exitX=1;exitY=0.8;entryX=0;entryY=0.51;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-8" target="3134SyGiZW_LSLvwtLpF-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2350" y="229" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-22" value="OPRIRE IMPRIMANTĂ" style="curved=1;startArrow=none;;exitX=1;exitY=0.51;entryX=0.03;entryY=0.53;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-10" target="3134SyGiZW_LSLvwtLpF-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3134SyGiZW_LSLvwtLpF-23" value="Reîncearcă la urm. strat" style="curved=1;startArrow=none;;exitX=0;exitY=0.35;entryX=0.83;entryY=0;rounded=0;" edge="1" parent="1" source="3134SyGiZW_LSLvwtLpF-5" target="3134SyGiZW_LSLvwtLpF-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1217" y="24" />
+              <mxPoint x="328" y="24" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
