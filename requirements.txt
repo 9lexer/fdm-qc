@@ -1,4 +1,17 @@
-opencv-python
-numpy
-matplotlib
-pandas
+# Core Frameworks
+tensorflow              # Pentru Modelul RN (Keras)
+numpy                   # Calcule numerice
+opencv-python           # Procesare imagini (cv2)
+
+# Data Manipulation & Logging
+pandas                  # Pentru CSV-uri și log-uri
+tqdm                    # Bara de progres (folosită la split date)
+
+# Visualization & Metrics
+matplotlib              # Grafice (Loss curve)
+seaborn                 # Matricea de confuzie (Heatmap)
+scikit-learn            # Calcul F1-score și Confusion Matrix
+
+# User Interface
+streamlit               # Aplicația Web
+Pillow                  # Manipulare imagini în UI

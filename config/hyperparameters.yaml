@@ -1,0 +1,14 @@
+# config/hyperparameters.yaml
+model:
+  input_shape: [128, 128, 3]
+  num_classes: 6
+  
+training:
+  epochs: 30
+  batch_size: 16
+  learning_rate: 0.001
+  optimizer: "adam"
+
+paths:
+  train_dir: "data/train"
+  test_dir: "data/test"

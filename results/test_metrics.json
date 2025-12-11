@@ -1,0 +1,5 @@
+{
+    "test_accuracy": 0.9737,
+    "test_f1_macro": 0.9704,
+    "test_loss": 0.1226
+}
