@@ -1,0 +1,5 @@
+Experiment,Learning Rate,Batch Size,Dropout,Val Accuracy
+exp1_base,0.001,16,0.0,0.9459459185600281
+exp2_lr,0.0001,16,0.0,0.9459459185600281
+exp3_batch,0.001,32,0.0,0.9459459185600281
+exp4_drop,0.001,16,0.3,0.9459459185600281
