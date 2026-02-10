@@ -94,7 +94,7 @@ def analyze_performance():
         plt.savefig(DOCS_DIR / "error_analysis_examples.png")
         print("✅ Exemple de erori salvate în docs/error_analysis_examples.png")
     else:
-        print("🎉 WOW! Zero erori pe setul de test! Model perfect?")
+        print("🎉 Zero erori pe setul de test!")
 
 if __name__ == "__main__":
     analyze_performance()
