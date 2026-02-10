@@ -6,7 +6,7 @@
 | **Grupa / Specializare** | 632AB / Informatică Industrială |
 | **Disciplina** | Rețele Neuronale |
 | **Instituție** | POLITEHNICA București – FIIR |
-| **Link Repository GitHub** | [Pune Link-ul Tău GitHub Aici] |
+| **Link Repository GitHub** | https://github.com/9lexer/fdm-qc |
 | **Acces Repository** | Public |
 | **Stack Tehnologic** | Python (TensorFlow/Keras, Streamlit, OpenCV) |
 | **Domeniul Industrial de Interes (DII)** | Producție / Additive Manufacturing (Imprimare 3D) |
